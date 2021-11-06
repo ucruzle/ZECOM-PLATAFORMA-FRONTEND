@@ -1,0 +1,11 @@
+{
+    "base": "./dist",
+    "conn_usestrictssl" : false, 
+    "conn_server": "https://vhmedds4ci.hec.medlevensohn.com.br:44300",
+    "conn_client" : "200",
+    "conn_user": "CRUZ.L",
+    "conn_password": "3jD@64lsai9#",
+    "abap_package": "$TMP",
+    "abap_bsp": "ZECOM_FRONTEND",
+    "abap_bsp_text": "App de Gestão de Comércio Eletrônico"
+}

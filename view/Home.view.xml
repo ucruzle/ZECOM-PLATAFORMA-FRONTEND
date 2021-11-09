@@ -89,18 +89,22 @@
 											enabled="{enabled}"
 											expanded="{expanded}"
 											items="{items}"
-											key="{key}">
+											key="{key}" 
+											tooltip="{message}">
 						<tnt:NavigationListItem text="{title}"
 												key="{key}"
-												enabled="{enabled}">
+												enabled="{enabled}" 
+												tooltip="{message}">
 						</tnt:NavigationListItem>
 					</tnt:NavigationListItem>
 				</tnt:NavigationList>
 				<tnt:fixedItem>
-					<tnt:NavigationList items="{path: '/fixedNavigation'}">
+					<tnt:NavigationList items="{path: '/fixedNavigation'}" 
+					                    tooltip="{message}">
 						<tnt:NavigationListItem text="{title}"
 												icon="{icon}"
-												key="{key}">
+												key="{key}" 
+												tooltip="{message}">
 						</tnt:NavigationListItem>
 					</tnt:NavigationList>
 				</tnt:fixedItem>

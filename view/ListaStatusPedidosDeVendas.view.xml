@@ -54,7 +54,7 @@
 						
 						<Table id="itensAPedidos" width="auto" itemPress="onEditDetalheVenda"
 							noDataText="Nenhum status de pedido de venda localizado" busyIndicatorDelay="{detailView>/lineItemTableDelay}" fixedLayout="false"
-							class="sapUiResponsiveMargin" items="{/Pedidos}">
+							class="sapUiResponsiveMargin" items="{/Status}">
 							<!-- <headerToolbar> -->
 								<!-- <Toolbar> -->
 									<!-- <Title text="Checklist"/> -->

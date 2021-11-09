@@ -25,24 +25,88 @@ sap.ui.define([
 			}
 
 			var oData = {
+				Pedidos: [],
+				Status: [],
 				navigation: [
 					{
 						title: 'Início',
 						icon: 'sap-icon://home',
-						key: 'cockpit'
+						key: 'cockpit',
+						message: 'Menu incial do aplicativo'
 					},
 					{
 						title: 'Vendas',
 						icon: 'sap-icon://sales-order',
 						expanded: false,
 						key: null,
+						message: 'Consulta e cria, pedidos de vendas',
 						items: [
 							{
 								title: 'Consultas',
-								key: 'listavendas'
+								key: 'listavendas',
+								message: 'Consulta pedidos de vendas gerados',
 							}, {
 								title: 'Novo',
-								key: 'gerapedidodevenda'
+								key: 'gerapedidodevenda',
+								message: 'Cria novos pedidos de vendas',
+							}, {
+								title: 'Status',
+								key: 'listastatuspedidosdevendas',
+								message: 'Consulta status dos pedidos de vendas',
+							}
+						]
+					},
+					{
+						title: 'Parceiros',
+						icon: 'sap-icon://account',
+						key: 'listaparceiros',
+						message: 'Consulta e cria, parceiros (Recebedor / Emissor)'
+					},
+					{
+						title: 'Produtos',
+						icon: 'sap-icon://product',
+						key: 'listaprodutos',
+						message: 'Consulta e cria, produtos para os pedidos de vendas'
+					},
+					{
+						title: 'Parâmetros',
+						icon: 'sap-icon://action-settings',
+						expanded: false,
+						key: null,
+						message: 'Consulta e cria, tipos e condições para os pedidos de vendas',
+						items: [
+							{
+								title: 'Centro',
+								key: 'listacentros',
+								message: 'Consulta e cria, centros comerciais para os pedidos de vendas'
+							}, {
+								title: 'Tipo de Ordem',
+								key: 'listatiposdeordensvendas',
+								message: 'Consulta e cria, tipos de ordens comerciais para os pedidos de vendas'
+							}, {
+								title: 'Organização de Vendas',
+								key: 'listaorganizacoesdevendas',
+								message: 'Consulta e cria, organizações comerciais para os pedidos de vendas'
+							}, {
+								title: 'Canal de Distribuição',
+								key: 'listacanaisdedistribuicao',
+								message: 'Consulta e cria, canais de distribuições comerciais para os pedidos de vendas'
+							}, {
+								title: 'Setor de Atividades',
+								key: 'listasetoresdeatividades',
+								message: 'Consulta e cria, setores de atividades comerciais para os pedidos de vendas'
+							}, {
+								title: 'Condição de Pagamento',
+								key: 'listacondicoesdepagamentos',
+								message: 'Consulta e cria, condições de pagamentos comerciais para os pedidos de vendas'
+							}, {
+								title: 'Tipo de Condições',
+								key: 'listatiposdecondicoes',
+								message: 'Consulta e cria, tipos de condições comerciais para os pedidos de vendas'
+							}, {
+								title: 'Categoria do Item',
+								key: 'listacategoriadoitem',
+								message: 'Consulta e cria, tipos de categorias comerciais para os itnes dos pedidos de vendas'
 							}
 						]
 					}
@@ -51,15 +115,18 @@ sap.ui.define([
 					{ 
 						title: 'Sobre',
 						icon: 'sap-icon://information',
-						key: 'sobre'
+						key: 'sobre',
+						message: 'Informações em detalhes do aplicativo'
 					}, {
 						title: 'Login',
 						icon: 'sap-icon://visits',
-						key: 'login'
+						key: 'login',
+						message: 'Entrar com usuário no aplicativo'
 					}, {
 						title: 'Logout',
 						icon: 'sap-icon://log',
-						key: 'logout'
+						key: 'logout',
+						message: 'Sair com usuário no aplicativo'
 					}
 				]
 			};

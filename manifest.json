@@ -133,6 +133,20 @@
 				"target": [
 				  "listastatuspedidosdevendas"
 				]
+			  },
+			  {
+				"pattern": "listaparceiros",
+				"name": "listaparceiros",
+				"target": [
+				  "listaparceiros"
+				]
+			  },
+			  {
+				"pattern": "listaprodutos",
+				"name": "listaprodutos",
+				"target": [
+				  "listaprodutos"
+				]
 			  }			
 		  ],
 		  "targets": {
@@ -152,10 +166,20 @@
 			  "controlAggregation": "pages"
 			},
 			"listastatuspedidosdevendas": {
-				"viewId": "listastatuspedidosdevendas",
-				"viewName": "ListaStatusPedidosDeVendas",
-				"controlAggregation": "pages"
-			  }
+			  "viewId": "listastatuspedidosdevendas",
+			  "viewName": "ListaStatusPedidosDeVendas",
+			  "controlAggregation": "pages"
+			},
+			"listaparceiros": {
+			  "viewId": "listaparceiros",
+			  "viewName": "ListaParceiros",
+			  "controlAggregation": "pages"
+			},
+			"listaprodutos": {
+			  "viewId": "listaprodutos",
+			  "viewName": "ListaProdutos",
+			  "controlAggregation": "pages"
+			}
 		  }
 		},
 		"dependencies": {

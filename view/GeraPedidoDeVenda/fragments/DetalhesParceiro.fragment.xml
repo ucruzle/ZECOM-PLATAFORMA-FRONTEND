@@ -1,5 +1,8 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+<core:FragmentDefinition xmlns="sap.m" 
+						 xmlns:l="sap.ui.layout" 
+						 xmlns:core="sap.ui.core" 
+						 xmlns:f="sap.ui.layout.form"
+						 xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 	
 	<Dialog title="Detalhes do Parceiro" class="sapUiSizeCompact" contentWidth="80%" contentHeight="60%">
 		

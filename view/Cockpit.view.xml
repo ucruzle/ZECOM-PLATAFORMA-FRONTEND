@@ -1,5 +1,11 @@
-<mvc:View controllerName="sap.ecom.plataforma.controller.Cockpit" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-	xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" class="sapUiSizeCompact">
+<mvc:View xmlns:core="sap.ui.core" 
+		  xmlns:mvc="sap.ui.core.mvc" 
+	      xmlns="sap.m" 
+		  xmlns:f="sap.ui.layout.form" 
+		  xmlns:l="sap.ui.layout" 
+		  displayBlock="true"
+		  class="sapUiSizeCompact"
+		  controllerName="sap.ecom.plataforma.controller.Cockpit">
 	
 	<Page title="Cockpit" showHeader="true" showNavButton="false">
 		<content>

@@ -6,10 +6,6 @@
 		  displayBlock="true" 
 		  controllerName="sap.ecom.plataforma.controller.Home">
 	
-	<!-- <App id="root">
-		<pages></pages>
-	</App> -->
-
 	<tnt:ToolPage id="toolPage" sideExpanded="false">
 		<tnt:header>
 			<tnt:ToolHeader>

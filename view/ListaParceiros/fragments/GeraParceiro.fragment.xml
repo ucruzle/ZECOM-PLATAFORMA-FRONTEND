@@ -4,7 +4,7 @@
 						 xmlns:f="sap.ui.layout.form"
 						 xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 	
-	<Dialog title="Login de Usuário" class="sapUiSizeCompact" contentWidth="30%" contentHeight="45%">
+	<Dialog title="Cria novo parceiro" class="sapUiSizeCompact" contentWidth="30%" contentHeight="45%">
 		
 		<Panel width="auto" class="sapUiResponsiveMargin">
 			<content>
@@ -17,10 +17,10 @@
 						<!-- 1º Início - Coluna -->
 				
 						<core:Title text="" level="H6"/>
-						<Label text="Usuário" />
-						<Input id="usuarioId" type="Text" value="{ path: '/usuarioId' }" tooltip="Usuário do App" />
-						<Label text="Senha" />
-						<Input id="senhaUsuario" type="Text" value="{ path: '/descricaoMaterial' }" tooltip="Entrar senha do usuário" />
+						<Label text="Código Parceiro" />
+						<Input id="codigoParceiro" type="Text" value="{ path: '/codigoParceiro' }" tooltip="Código do Parceiro SAP" />
+						<Label text="Nome" />
+						<Input id="nomeParceiro" type="Text" value="{ path: '/nomeParceiro' }" tooltip="Nome do Parceiro" />
 						
 						<!-- 1º Fim - Coluna -->
 						
@@ -32,10 +32,10 @@
 		</Panel>
 		
 		<beginButton>
-			<Button type="Emphasized" text="Confirmar" press="onLoginNoApp" />
+			<Button type="Emphasized" text="Confirmar" press="onGravarParceiro" />
 		</beginButton>
 		<endButton>
-			<Button text="Fechar" press="onCloseLoginApp" />
+			<Button text="Fechar" press="onCloseParceiro" />
 		</endButton>
 		
 	</Dialog>

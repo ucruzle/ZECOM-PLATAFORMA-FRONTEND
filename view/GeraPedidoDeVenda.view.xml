@@ -1,6 +1,11 @@
-<mvc:View controllerName="sap.ecom.plataforma.controller.GeraPedidoDeVenda" xmlns:core="sap.ui.core" 
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" 
-	xmlns:l="sap.ui.layout" class="sapUiSizeCompact">
+<mvc:View xmlns:core="sap.ui.core" 
+		  xmlns:mvc="sap.ui.core.mvc" 
+		  xmlns="sap.m" 
+		  xmlns:f="sap.ui.layout.form" 
+		  xmlns:l="sap.ui.layout" 
+		  displayBlock="true" 
+		  class="sapUiSizeCompact"
+		  controllerName="sap.ecom.plataforma.controller.GeraPedidoDeVenda">
 
 	<Page title="ZECOM - Pedido de Venda" showHeader="true" showNavButton="true" navButtonPress="onNavBack">
 		<content>
@@ -47,7 +52,7 @@
 
 							<Label text="Pagamento" required="false" />
 							<Input id="condicaoPagamento" type="Text" value="{ path: 'Pedido>/condicaoPagamento' }" showValueHelp="true" 
-								valueHelpRequest="handleValueHelpCondicaoPagamento" change="" valueState="" tooltip="Condição de Pagamento">
+								valueHelpRequest="handleValueHelpCondicaoPagamento" change="" valueState="" tooltip="Tipo de Condição de Pagamento">
 								<layoutData>
 									<l:GridData span="XL3 L3 M3 S12"/>
 								</layoutData>
@@ -59,9 +64,9 @@
 							<!--3º coluna - Início -->
 
 							<core:Title text="" level="H6"/>
-							<Label text="Condições" required="false" />
-							<Input id="tipoCondicao" type="Text" value="{ path: 'Pedido>/tipoCondicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoCondicao" change="" valueState="" tooltip="Tipo de Condição" />
-							<Input id="valorCondicao" type="Text" value="{ path: 'Pedido>/valorCondicao' }" tooltip="Valor da Condição" />
+							<Label text="Frete" required="false" />
+							<Input id="tipoCondicao" type="Text" value="{ path: 'Pedido>/tipoCondicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoCondicao" change="" valueState="" tooltip="Tipo de Condição de Frete" />
+							<Input id="valorCondicao" type="Text" value="{ path: 'Pedido>/valorCondicao' }" tooltip="Valor da Condição de Frete" />
 							
 							<Label text="Inco. / Ref." required="false" />
 							<Input id="tipoEntrega" type="Text" value="{ path: 'Pedido>/tipoEntrega' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoEntrega" change="" valueState="" tooltip="Tipo de Entrega" />
@@ -191,7 +196,7 @@
 								<Text text="Unidade"/>
 							</Column>
 							<Column minScreenWidth="Tablet" demandPopin="true">
-								<Text text="Categoria"/>
+								<Text text="Preço"/>
 							</Column>
 							<Column minScreenWidth="Tablet" demandPopin="true">
 								<Text text="Quantidade"/>

@@ -1,5 +1,8 @@
-<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
-	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+<core:FragmentDefinition xmlns="sap.m" 
+						 xmlns:l="sap.ui.layout" 
+						 xmlns:core="sap.ui.core" 
+						 xmlns:f="sap.ui.layout.form"
+						 xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 	
 	<Dialog title="Detalhes do Item" class="sapUiSizeCompact" contentWidth="80%" contentHeight="50%">
 		
@@ -49,7 +52,7 @@
 						<!-- 3º Início - Coluna -->
 						
 						<core:Title text="" level="H6"/>
-						<Label text="Categoria" required="true"/>
+						<Label text="Preço" required="true"/>
 						<Input id="categoriaItem" type="Text" value="{ path: '/categoriaItem' }" tooltip="Categoria do Item">
 							<layoutData>
 								<l:GridData span="XL3 L3 M3 S12"/>

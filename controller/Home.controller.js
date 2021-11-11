@@ -96,17 +96,17 @@ sap.ui.define([
 								key: 'listasetoresdeatividades',
 								message: 'Consulta e cria, setores de atividades comerciais para os pedidos de vendas'
 							}, {
-								title: 'Condição de Pagamento',
+								title: 'Pagamento',
 								key: 'listacondicoesdepagamentos',
 								message: 'Consulta e cria, condições de pagamentos comerciais para os pedidos de vendas'
 							}, {
-								title: 'Tipo de Condições',
+								title: 'Frete',
 								key: 'listatiposdecondicoes',
-								message: 'Consulta e cria, tipos de condições comerciais para os pedidos de vendas'
+								message: 'Consulta e cria, tipos de condições de fretes comerciais para os pedidos de vendas'
 							}, {
-								title: 'Categoria do Item',
+								title: 'Preço',
 								key: 'listacategoriadoitem',
-								message: 'Consulta e cria, tipos de categorias comerciais para os itnes dos pedidos de vendas'
+								message: 'Consulta e cria, tipos de categorias de preços comerciais para os itnes dos pedidos de vendas'
 							}
 						]
 					}

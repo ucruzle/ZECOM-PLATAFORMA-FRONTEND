@@ -8,8 +8,12 @@ sap.ui.define([
 ], function(Controller, Filter, utils, JSONModel, History, UIComponent) {
 	"use strict";
 
-	return Controller.extend("sap.ecom.plataforma.controller.ListaStatusPedidosDeVendas", {
+	return Controller.extend("sap.ecom.plataforma.controller.ListaProdutos", {
 
+		onInit: function () {
+			this._activeScreen = "view";
+		},
+		
 		onNavBack: function () {
 
 			var oHistory = History.getInstance();
@@ -29,8 +33,8 @@ sap.ui.define([
 
 			var oView   = this.getView();
 			var oModel  = null;
-			var Status = [];
-			var Pedido  = {};
+			var Parceiros = [];
+			var Parceiro  = {};
 			
 			oModel = oView.getModel();
 			
@@ -38,53 +42,53 @@ sap.ui.define([
 				oModel = new JSONModel();
 			}
 
-			Pedido = {
-				idPedido: "ALE_99000061",
-				idOrdemVenda: "671",
-				idNfe: "000004443",
-				series: "001",
-				valorTotal: "20.000",
-				status: "Não Autorizada"
+			Parceiro = {
+				idPedido: "LEO_99000020",
+				idOrdemVenda: "456",
+				dataProcessamento: "01/09/2021",
+				horaProcessamento: "14:41:25",
+				usuario: "CRUZ.L",
+				mensagem: "Venda E-commerce 456 foi gravado."
 			}; 
 
-			Status.push(Pedido);
+			Parceiros.push(Parceiro);
 			
-			Pedido = {
-				idPedido: "ALE_99000062",
-				idOrdemVenda: "672",
-				idNfe: "000004444",
-				series: "001",
-				valorTotal: "20.000",
-				status: "Não Autorizada"
+			Parceiro = {
+				idPedido: "LEO_99000021",
+				idOrdemVenda: "457",
+				dataProcessamento: "01/09/2021",
+				horaProcessamento: "14:43:37",
+				usuario: "CRUZ.L",
+				mensagem: "Venda E-commerce 456 foi gravado."
 			};
 
-			Status.push(Pedido);
+			Parceiros.push(Parceiro);
 
-			Pedido = {
-				idPedido: "ALE_99000063",
-				idOrdemVenda: "673",
-				idNfe: "000004445",
-				series: "001",
-				valorTotal: "20.000",
-				status: "Faturada"
+			Parceiro = {
+				idPedido: "LEO_99000022",
+				idOrdemVenda: "458",
+				dataProcessamento: "01/09/2021",
+				horaProcessamento: "15:04:25",
+				usuario: "CRUZ.L",
+				mensagem: "Venda E-commerce 456 foi gravado."
 			};
 
-			Status.push(Pedido);
+			Parceiros.push(Parceiro);
 
-			Pedido = {
-				idPedido: "ALE_99000090",
-				idOrdemVenda: "704",
-				idNfe: "",
-				series: "",
-				valorTotal: "",
-				status: "Pendente"
+			Parceiro = {
+				idPedido: "LEO_99000023",
+				idOrdemVenda: "459",
+				dataProcessamento: "02/09/2021",
+				horaProcessamento: "16:17:31",
+				usuario: "CRUZ.L",
+				mensagem: "Venda E-commerce 456 foi gravado."
 			};
 
-			Status.push(Pedido);
+			Parceiros.push(Parceiro);
 
 			var oData = {
-				Pedidos: [],
-				Status: Status,
+				Parceiros: Parceiros,
+				Status: [],
 				navigation: [
 					{
 						title: 'Início',
@@ -192,18 +196,36 @@ sap.ui.define([
 			oModel.setData(oData);
 			oView.setModel(oModel);
 
-		}
+		},
 
-		// onbtnCriarVenda: function() {
-		// 	var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		// 	oRouter.navTo("gerapedidodevenda");
-		// },
+		onbtnCriarProduto: function() {
+			this._showProdutoFragment();
+		},
 
-		// onEditDetalheVenda: function(oEvent) {
-		// 	// utils.navegaEtapaCarregamento(this, oEvent, 1);
-		// 	var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-		// 	oRouter.navTo("gerapedidodevenda");
-		// }
+		onEditDetalheProduto: function(oEvent) {
+			this._showProdutoFragment();
+		},
+
+		onGravarProduto: function(oEvent) {
+			this.onCloseProduto();
+		},
+
+		onCloseProduto: function() {
+			this._activeScreen = "view";
+			this._ProdutoFragment.close();
+		},
+
+		_showProdutoFragment: function() {
+
+			if (!this._ProdutoFragment) {
+				this._ProdutoFragment = sap.ui.xmlfragment("ProdutoFragment",
+					"sap.ecom.plataforma.view.ListaProdutos.fragments.GeraProduto",
+					this
+				);
+				this.getView().addDependent(this._ProdutoFragment);
+			}
+			this._ProdutoFragment.open();
+		},
 
 	});
 });

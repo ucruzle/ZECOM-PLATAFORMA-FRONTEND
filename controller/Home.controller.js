@@ -112,7 +112,7 @@ sap.ui.define([
 					}
 				],
 				fixedNavigation: [
-					{ 
+					{
 						title: 'Sobre',
 						icon: 'sap-icon://information',
 						key: 'sobre',
@@ -136,7 +136,7 @@ sap.ui.define([
 
 		},
 
-		onItemSelect : function(oEvent) {
+		onItemSelect: function (oEvent) {
 
 			var tiposMenuFixo = {
 				"SOBRE": "sobre",
@@ -146,7 +146,7 @@ sap.ui.define([
 
 			var oRouter = {};
 			var item = oEvent.getParameter('item');
-			var path =  item.getKey();
+			var path = item.getKey();
 
 			if (path !== "") {
 				if ((path === "sobre") || (path === "login") || (path === "logout")) {
@@ -159,9 +159,9 @@ sap.ui.define([
 							this._showLoginFragment();
 							break;
 						case tiposMenuFixo.LOGOUT:
-							utils.confirmDialog("Sair com o usuário do aplicativo?", function() { 
+							utils.confirmDialog("Sair com o usuário do aplicativo?", function () {
 								null;
-							});							
+							});
 							break;
 						default:
 							break;
@@ -175,11 +175,11 @@ sap.ui.define([
 			this._SideNavButtonPress(false);
 		},
 
-		onSideNavButtonPress : function() {
+		onSideNavButtonPress: function () {
 			this._SideNavButtonPress(true);
 		},
 
-		_SideNavButtonPress : function(menu) {
+		_SideNavButtonPress: function (menu) {
 			var viewId = this.getView().getId();
 			var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
 
@@ -194,7 +194,7 @@ sap.ui.define([
 			var popover = new Popover({
 				showHeader: false,
 				placement: sap.m.PlacementType.Bottom,
-				content:[
+				content: [
 					new Button({
 						text: 'Detalhes',
 						type: sap.m.ButtonType.Transparent,
@@ -210,7 +210,7 @@ sap.ui.define([
 			popover.openBy(event.getSource());
 		},
 
-		_showLoginFragment: function() {
+		_showLoginFragment: function () {
 
 			if (!this._LoginFragment) {
 				this._LoginFragment = sap.ui.xmlfragment("LoginFragment",
@@ -222,11 +222,11 @@ sap.ui.define([
 			this._LoginFragment.open();
 		},
 
-		onLoginNoApp: function(oEvent) {
+		onLoginNoApp: function (oEvent) {
 			this.onCloseLoginApp();
 		},
 
-		onCloseLoginApp: function() {
+		onCloseLoginApp: function () {
 			this._activeScreen = "view";
 			this._LoginFragment.close();
 		},

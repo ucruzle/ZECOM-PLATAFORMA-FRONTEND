@@ -147,6 +147,62 @@
 				"target": [
 				  "listaprodutos"
 				]
+			  },
+			  {
+				"pattern": "listacentros",
+				"name": "listacentros",
+				"target": [
+				  "listacentros"
+				]
+			  },
+			  {
+				"pattern": "listatiposdeordensvendas",
+				"name": "listatiposdeordensvendas",
+				"target": [
+				  "listatiposdeordensvendas"
+				]
+			  },
+			  {
+				"pattern": "listaorganizacoesdevendas",
+				"name": "listaorganizacoesdevendas",
+				"target": [
+				  "listaorganizacoesdevendas"
+				]
+			  },
+			  {
+				"pattern": "listacanaisdedistribuicao",
+				"name": "listacanaisdedistribuicao",
+				"target": [
+				  "listacanaisdedistribuicao"
+				]
+			  },
+			  {
+				"pattern": "listasetoresdeatividades",
+				"name": "listasetoresdeatividades",
+				"target": [
+				  "listasetoresdeatividades"
+				]
+			  },
+			  {
+				"pattern": "listacondicoesdepagamentos",
+				"name": "listacondicoesdepagamentos",
+				"target": [
+				  "listacondicoesdepagamentos"
+				]
+			  },
+			  {
+				"pattern": "listatiposdecondicoes",
+				"name": "listatiposdecondicoes",
+				"target": [
+				  "listatiposdecondicoes"
+				]
+			  },
+			  {
+				"pattern": "listacategoriadoitem",
+				"name": "listacategoriadoitem",
+				"target": [
+				  "listacategoriadoitem"
+				]
 			  }			
 		  ],
 		  "targets": {
@@ -178,6 +234,46 @@
 			"listaprodutos": {
 			  "viewId": "listaprodutos",
 			  "viewName": "ListaProdutos",
+			  "controlAggregation": "pages"
+			},
+			"listacentros": {
+			  "viewId": "listacentros",
+			  "viewName": "ListaCentros",
+			  "controlAggregation": "pages"
+			},
+			"listatiposdeordensvendas": {
+			  "viewId": "listatiposdeordensvendas",
+			  "viewName": "ListaTiposDeOrdensVendas",
+			  "controlAggregation": "pages"
+			},
+			"listaorganizacoesdevendas": {
+			  "viewId": "listaorganizacoesdevendas",
+			  "viewName": "ListaOrganizacoesDeVendas",
+			  "controlAggregation": "pages"
+			},
+			"listacanaisdedistribuicao": {
+			  "viewId": "listacanaisdedistribuicao",
+			  "viewName": "ListaCanaisDeDistribuicao",
+			  "controlAggregation": "pages"
+			},
+			"listasetoresdeatividades": {
+			  "viewId": "listasetoresdeatividades",
+			  "viewName": "ListaSetoresDeAtividades",
+			  "controlAggregation": "pages"
+			},
+			"listacondicoesdepagamentos": {
+			  "viewId": "listacondicoesdepagamentos",
+			  "viewName": "ListaCondicoesDePagamentos",
+			  "controlAggregation": "pages"
+			},
+			"listatiposdecondicoes": {
+			  "viewId": "listatiposdecondicoes",
+			  "viewName": "ListaTiposDeCondicoes",
+			  "controlAggregation": "pages"
+			},
+			"listacategoriadoitem": {
+			  "viewId": "listacategoriadoitem",
+			  "viewName": "ListaCategoriaDoItem",
 			  "controlAggregation": "pages"
 			}
 		  }

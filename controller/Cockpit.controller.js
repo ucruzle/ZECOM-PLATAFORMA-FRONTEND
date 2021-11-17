@@ -22,9 +22,9 @@ sap.ui.define([
 			oRouter.navTo("listavendas");
 		},
 		
-		onListaCustomizacoes: function() {
+		onListaParceiros: function() {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-			oRouter.navTo("listacustomizacoes");
+			oRouter.navTo("listaparceiros");
 		},
 		
 		onListaProdutos: function() {

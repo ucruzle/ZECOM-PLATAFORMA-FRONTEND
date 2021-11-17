@@ -33,10 +33,10 @@
 				</TileContent>
 			</GenericTile>
 
-			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Customizações" subheader=""
-				press="onListaCustomizacoes">
-				<TileContent footer="Cadastro e consultas de áreas de vendas, formas de pagamentos, condições e incoterms">
-					<ImageContent src="sap-icon://customize"/>
+			<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Parceiros" subheader=""
+				press="onListaParceiros">
+				<TileContent footer="Cadastro e consultas de parceiros comerciais">
+					<ImageContent src="sap-icon://account"/>
 				</TileContent>
 			</GenericTile>
 			

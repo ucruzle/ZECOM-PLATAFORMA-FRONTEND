@@ -171,6 +171,32 @@ sap.ui.define([
 								message: 'Consulta e cria, tipos de categorias de preços comerciais para os itnes dos pedidos de vendas'
 							}
 						]
+					}, 
+					{
+						title: 'Controle de Acesso',
+						icon: 'sap-icon://user-settings',
+						expanded: false,
+						key: null,
+						message: 'Consulta e cria, usuário, perfil, permissões e concessões de funcionalidades',
+						items: [
+							{
+								title: 'Recursos',
+								key: 'listarecursosporperfis',
+								message: 'Consulta e cria, recursos por perfil de acesso ao app',
+							}, {
+								title: 'Perfis',
+								key: 'listaperfisdeacesso',
+								message: 'Consulta e cria, perfins de acesso ao app',
+							}, {
+								title: 'Acessos',
+								key: 'concessoesdeacessos',
+								message: 'Cria novas concessões de acesso, por usuários x perfis',
+							}, {
+								title: 'Usuários',
+								key: 'listausuarios',
+								message: 'Consulta e cria, usuários do app gerados',
+							}
+						]
 					}
 				],
 				fixedNavigation: [

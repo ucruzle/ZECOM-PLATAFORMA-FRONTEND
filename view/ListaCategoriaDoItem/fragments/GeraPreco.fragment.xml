@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código Preço" />
-						<Input id="codigoPreco" type="Text" value="{ path: '/codigoPreco' }" tooltip="Código SAP da categoria de preço do item" />
+						<Input id="codigoPreco" value="{ path: '/codigoPreco' }" tooltip="Código SAP da categoria de preço do item" />
 						<Label text="Descrição" />
-						<Input id="descricaoPreco" type="Text" value="{ path: '/descricaoPreco' }" tooltip="Descrição da categoria de preço do item" />
+						<Input id="descricaoPreco" value="{ path: '/descricaoPreco' }" tooltip="Descrição da categoria de preço do item" />
 						
 						<!-- 1º Fim - Coluna -->
 						

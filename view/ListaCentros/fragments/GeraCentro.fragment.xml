@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código Centro" />
-						<Input id="codigoCentro" type="Text" value="{ path: '/codigoCentro' }" tooltip="Código do Centro SAP" />
+						<Input id="codigoCentro" value="{ path: '/codigoCentro' }" tooltip="Código do Centro SAP" />
 						<Label text="Descrição" />
-						<Input id="descricaoCentro" type="Text" value="{ path: '/descricaoCentro' }" tooltip="Descrição do Centro" />
+						<Input id="descricaoCentro" value="{ path: '/descricaoCentro' }" tooltip="Descrição do Centro" />
 						
 						<!-- 1º Fim - Coluna -->
 						

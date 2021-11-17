@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Condição de Pagamento" />
-						<Input id="codigoCondicaoPagamento" type="Text" value="{ path: '/codigoCondicaoPagamento' }" tooltip="Código SAP da Condição de Pagamento" />
+						<Input id="codigoCondicaoPagamento" value="{ path: '/codigoCondicaoPagamento' }" tooltip="Código SAP da Condição de Pagamento" />
 						<Label text="Descrição" />
-						<Input id="descricaDaCondicaoDePagamento" type="Text" value="{ path: '/descricaDaCondicaoDePagamento' }" tooltip="Descrição da Condição de Pagamento" />
+						<Input id="descricaDaCondicaoDePagamento" value="{ path: '/descricaDaCondicaoDePagamento' }" tooltip="Descrição da Condição de Pagamento" />
 						
 						<!-- 1º Fim - Coluna -->
 						

@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código" />
-						<Input id="codigoCanalDeDistribuicao" type="Text" value="{ path: '/codigoCanalDeDistribuicao' }" tooltip="Código SAP Canal de Distribuição" />
+						<Input id="codigoCanalDeDistribuicao" value="{ path: '/codigoCanalDeDistribuicao' }" tooltip="Código SAP Canal de Distribuição" />
 						<Label text="Descrição" />
-						<Input id="descricaoCanalDeDistribuicao" type="Text" value="{ path: '/descricaoCanalDeDistribuicao' }" tooltip="Descrição do Canal de Distribuição" />
+						<Input id="descricaoCanalDeDistribuicao" value="{ path: '/descricaoCanalDeDistribuicao' }" tooltip="Descrição do Canal de Distribuição" />
 						
 						<!-- 1º Fim - Coluna -->
 						

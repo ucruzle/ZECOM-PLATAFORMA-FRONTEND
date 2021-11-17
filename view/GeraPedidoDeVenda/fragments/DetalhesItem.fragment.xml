@@ -18,16 +18,16 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Item" />
-						<Input id="numeroItem" type="Text" value="{ path: '/numeroItem' }" enabled="false" tooltip="Nº do Item">
+						<Input id="numeroItem" value="{ path: '/numeroItem' }" enabled="false" tooltip="Nº do Item">
 							<layoutData>
 								<l:GridData span="XL3 L3 M3 S12"/>
 							</layoutData>
 						</Input>
-						<Input id="numeroMaterial" type="Text" value="{ path: '/numeroMaterial' }" showValueHelp="true" valueHelpRequest="handleValueHelpNumeroMaterial" 
+						<Input id="numeroMaterial" value="{ path: '/numeroMaterial' }" showValueHelp="true" valueHelpRequest="handleValueHelpNumeroMaterial" 
 							change="" valueState="" tooltip="Nº do Material" />
 						
 						<Label text="" />
-						<Input id="descricaoMaterial" type="Text" enabled="false" value="{ path: '/descricaoMaterial' }" tooltip="Descrição do Material" />
+						<Input id="descricaoMaterial" enabled="false" value="{ path: '/descricaoMaterial' }" tooltip="Descrição do Material" />
 						
 						<!-- 1º Fim - Coluna -->
 						
@@ -35,17 +35,17 @@
 						
 						<core:Title text="" level="H6"/>
 						<Label text="Centro" required="true"/>
-						<Input id="centro" type="Text" value="{ path: '/centro' }" showValueHelp="true" valueHelpRequest="handleValueHelpCentro" 
+						<Input id="centro" value="{ path: '/centro' }" showValueHelp="true" valueHelpRequest="handleValueHelpCentro" 
 							change="" valueState="" tooltip="Centro">
 							<layoutData>
 								<l:GridData span="XL3 L3 M3 S12"/>
 							</layoutData>
 						</Input>
-						<Input id="descricaoCentro" type="Text" enabled="false" value="{ path: '/descricaoCentro' }" tooltip="Descrição do Centro" />
+						<Input id="descricaoCentro" enabled="false" value="{ path: '/descricaoCentro' }" tooltip="Descrição do Centro" />
 
 						<Label text="Quantidade" required="true"/>
-						<Input id="quantidade" type="Text" value="{ path: '/quantidade' }" tooltip="Quantidade do Material" />
-						<Input id="unidade" type="Text" value="{ path: '/unidade' }" tooltip="Unidade do Material" />
+						<Input id="quantidade" value="{ path: '/quantidade' }" tooltip="Quantidade do Material" />
+						<Input id="unidade" value="{ path: '/unidade' }" tooltip="Unidade do Material" />
 
 						<!-- 2º Fim - Coluna -->
 						
@@ -53,16 +53,16 @@
 						
 						<core:Title text="" level="H6"/>
 						<Label text="Preço" required="true"/>
-						<Input id="categoriaItem" type="Text" value="{ path: '/categoriaItem' }" tooltip="Categoria do Item">
+						<Input id="categoriaItem" value="{ path: '/categoriaItem' }" tooltip="Categoria do Item">
 							<layoutData>
 								<l:GridData span="XL3 L3 M3 S12"/>
 							</layoutData>
 						</Input>
-						<Input id="descricaoCategoria" type="Text" enabled="false" value="{ path: '/descricaoCategoria' }" tooltip="Descrição da Categoria" />
+						<Input id="descricaoCategoria" enabled="false" value="{ path: '/descricaoCategoria' }" tooltip="Descrição da Categoria" />
 
 						<Label text="Valor" required="true"/>
-						<Input id="valor" type="Text" value="{ path: '/valor' }" tooltip="Valor" />
-						<Input id="codigoMoeda" type="Text" value="{ path: '/codigoMoeda' }" enabled="false" tooltip="Moeda" />
+						<Input id="valor" value="{ path: '/valor' }" tooltip="Valor" />
+						<Input id="codigoMoeda" value="{ path: '/codigoMoeda' }" enabled="false" tooltip="Moeda" />
 						
 						<!-- 3º Fim - Coluna -->
 				

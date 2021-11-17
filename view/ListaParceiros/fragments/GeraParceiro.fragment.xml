@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código Parceiro" />
-						<Input id="codigoParceiro" type="Text" value="{ path: '/codigoParceiro' }" tooltip="Código do Parceiro SAP" />
+						<Input id="codigoParceiro" value="{ path: '/codigoParceiro' }" tooltip="Código do Parceiro SAP" />
 						<Label text="Nome" />
-						<Input id="nomeParceiro" type="Text" value="{ path: '/nomeParceiro' }" tooltip="Nome do Parceiro" />
+						<Input id="nomeParceiro" value="{ path: '/nomeParceiro' }" tooltip="Nome do Parceiro" />
 						
 						<!-- 1º Fim - Coluna -->
 						

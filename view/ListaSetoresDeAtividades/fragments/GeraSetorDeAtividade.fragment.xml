@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código" />
-						<Input id="codigoSetorDeAtividade" type="Text" value="{ path: '/codigoSetorDeAtividade' }" tooltip="Código SAP Setor de Atividade" />
+						<Input id="codigoSetorDeAtividade" value="{ path: '/codigoSetorDeAtividade' }" tooltip="Código SAP Setor de Atividade" />
 						<Label text="Descrição" />
-						<Input id="descricaoSetorDeAtividade" type="Text" value="{ path: '/descricaoSetorDeAtividade' }" tooltip="Descrição do Setor de Atividade" />
+						<Input id="descricaoSetorDeAtividade" value="{ path: '/descricaoSetorDeAtividade' }" tooltip="Descrição do Setor de Atividade" />
 						
 						<!-- 1º Fim - Coluna -->
 						

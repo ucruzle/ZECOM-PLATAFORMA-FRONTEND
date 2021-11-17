@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="OV" />
-						<Input id="codigoOrganizacaoVenda" type="Text" value="{ path: '/codigoOrganizacaoVenda' }" tooltip="Código de Organização de Vendas SAP" />
+						<Input id="codigoOrganizacaoVenda" value="{ path: '/codigoOrganizacaoVenda' }" tooltip="Código de Organização de Vendas SAP" />
 						<Label text="Descrição" />
-						<Input id="descricaoOrganizacaoVenda" type="Text" value="{ path: '/descricaoOrganizacaoVenda' }" tooltip="Descrição da Organização de Vendas" />
+						<Input id="descricaoOrganizacaoVenda" value="{ path: '/descricaoOrganizacaoVenda' }" tooltip="Descrição da Organização de Vendas" />
 						
 						<!-- 1º Fim - Coluna -->
 						

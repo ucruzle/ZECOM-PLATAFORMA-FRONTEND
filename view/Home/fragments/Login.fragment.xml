@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Usuário" />
-						<Input id="usuarioId" type="Text" value="{ path: '/usuarioId' }" tooltip="Usuário do App" />
+						<Input id="usuarioId" maxLength="20" value="{ path: '/usuarioId' }" tooltip="Usuário do app" />
 						<Label text="Senha" />
-						<Input id="senhaUsuario" type="Text" value="{ path: '/descricaoMaterial' }" tooltip="Entrar senha do usuário" />
+						<Input id="senhaUsuario" maxLength="10" type="Password" value="{ path: '/senhaUsuario' }" placeholder="Entrar senha do usuário" />
 						
 						<!-- 1º Fim - Coluna -->
 						

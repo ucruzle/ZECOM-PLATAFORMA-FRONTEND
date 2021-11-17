@@ -29,16 +29,16 @@
 							
 							<core:Title text="" level="H6"/>
 							<Label text="Pedido" required="false" />
-							<Input id="idPedido" type="Text" value="{ path: 'Pedido>/idPedido' }" enabled="false" tooltip="Nº do Pedido" />
+							<Input id="idPedido" value="{ path: 'Pedido>/idPedido' }" enabled="false" tooltip="Nº do Pedido" />
 							
 							<Label text="Tipo" required="true"/>
-							<Input id="tipoOrdem" type="Text" value="{ path: 'Pedido>/tipoOrdem' }" showValueHelp="true" 
+							<Input id="tipoOrdem" value="{ path: 'Pedido>/tipoOrdem' }" showValueHelp="true" 
 								valueHelpRequest="handleValueHelpTipoOrdem" change="" valueState="" tooltip="Tipo de Pedido">
 								<layoutData>
 									<l:GridData span="XL3 L3 M3 S12"/>
 								</layoutData>
 							</Input>								
-							<Input id="descricaoTipoOrdem" type="Text" value="{ path: '/descricaoTipoOrdem' }" enabled="false" />													
+							<Input id="descricaoTipoOrdem" value="{ path: '/descricaoTipoOrdem' }" enabled="false" />													
 							
 							<!-- 1º coluna - Fim -->
 							
@@ -46,18 +46,18 @@
 							
 							<core:Title text="" level="H6"/>
 							<Label text="Vendas" required="true"/>
-							<Input id="organizacaoVendas" type="Text" value="{ path: 'Pedido>/organizacaoVendas' }" showValueHelp="true" valueHelpRequest="handleValueHelpOrganizacaoVendas" change="" valueState="" tooltip="Organização de Vendas" />
-							<Input id="canalDistribuicao" type="Text" value="{ path: 'Pedido>/canalDistribuicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpCanalDistribuicao" change="" valueState="" tooltip="Canal de Distribuição" />
-							<Input id="setorAtividade" type="Text" value="{ path: 'Pedido>/setorAtividade' }" showValueHelp="true" valueHelpRequest="handleValueHelpSetorAtividade" change="" valueState="" tooltip="Setor de Atividade" />
+							<Input id="organizacaoVendas" value="{ path: 'Pedido>/organizacaoVendas' }" showValueHelp="true" valueHelpRequest="handleValueHelpOrganizacaoVendas" change="" valueState="" tooltip="Organização de Vendas" />
+							<Input id="canalDistribuicao" value="{ path: 'Pedido>/canalDistribuicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpCanalDistribuicao" change="" valueState="" tooltip="Canal de Distribuição" />
+							<Input id="setorAtividade" value="{ path: 'Pedido>/setorAtividade' }" showValueHelp="true" valueHelpRequest="handleValueHelpSetorAtividade" change="" valueState="" tooltip="Setor de Atividade" />
 
 							<Label text="Pagamento" required="false" />
-							<Input id="condicaoPagamento" type="Text" value="{ path: 'Pedido>/condicaoPagamento' }" showValueHelp="true" 
+							<Input id="condicaoPagamento" value="{ path: 'Pedido>/condicaoPagamento' }" showValueHelp="true" 
 								valueHelpRequest="handleValueHelpCondicaoPagamento" change="" valueState="" tooltip="Tipo de Condição de Pagamento">
 								<layoutData>
 									<l:GridData span="XL3 L3 M3 S12"/>
 								</layoutData>
 							</Input>
-							<Input id="descricaoCondicaoPagamento" type="Text" value="{ path: '/descricaoCondicaoPagamento' }" enabled="false" />
+							<Input id="descricaoCondicaoPagamento" value="{ path: '/descricaoCondicaoPagamento' }" enabled="false" />
 							
 							<!--2º coluna - Fim -->
 
@@ -65,12 +65,12 @@
 
 							<core:Title text="" level="H6"/>
 							<Label text="Frete" required="false" />
-							<Input id="tipoCondicao" type="Text" value="{ path: 'Pedido>/tipoCondicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoCondicao" change="" valueState="" tooltip="Tipo de Condição de Frete" />
-							<Input id="valorCondicao" type="Text" value="{ path: 'Pedido>/valorCondicao' }" tooltip="Valor da Condição de Frete" />
+							<Input id="tipoCondicao" value="{ path: 'Pedido>/tipoCondicao' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoCondicao" change="" valueState="" tooltip="Tipo de Condição de Frete" />
+							<Input id="valorCondicao" value="{ path: 'Pedido>/valorCondicao' }" tooltip="Valor da Condição de Frete" />
 							
 							<Label text="Inco. / Ref." required="false" />
-							<Input id="tipoEntrega" type="Text" value="{ path: 'Pedido>/tipoEntrega' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoEntrega" change="" valueState="" tooltip="Tipo de Entrega" />
-							<Input id="referenciaPo" type="Text" value="{ path: 'Pedido>/referenciaPo' }" tooltip="Referência do Pedido de Venda" />
+							<Input id="tipoEntrega" value="{ path: 'Pedido>/tipoEntrega' }" showValueHelp="true" valueHelpRequest="handleValueHelpTipoEntrega" change="" valueState="" tooltip="Tipo de Entrega" />
+							<Input id="referenciaPo" value="{ path: 'Pedido>/referenciaPo' }" tooltip="Referência do Pedido de Venda" />
 
 							<!--3º coluna - Fim -->
 							

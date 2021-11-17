@@ -18,9 +18,9 @@
 				
 						<core:Title text="" level="H6"/>
 						<Label text="Código Produto" />
-						<Input id="codigoProduto" type="Text" value="{ path: '/codigoProduto' }" tooltip="Código do Produto SAP" />
+						<Input id="codigoProduto" value="{ path: '/codigoProduto' }" tooltip="Código do Produto SAP" />
 						<Label text="Descrição" />
-						<Input id="descricaoProduto" type="Text" value="{ path: '/descricaoProduto' }" tooltip="Descrição do Produto" />
+						<Input id="descricaoProduto" value="{ path: '/descricaoProduto' }" tooltip="Descrição do Produto" />
 						
 						<!-- 1º Fim - Coluna -->
 						

@@ -198,23 +198,30 @@ sap.ui.define([
 					oRouter.navTo(path);
 				}
 			}
-			this._SideNavButtonPress(false);
+			// this._SideNavButtonPress(false);
 		},
 
 		onSideNavButtonPress: function () {
-			this._SideNavButtonPress(true);
+			// this._SideNavButtonPress(true);
+			this._SideNavButtonPress();
 		},
 
-		_SideNavButtonPress: function (menu) {
+		_SideNavButtonPress: function () {
 			var viewId = this.getView().getId();
 			var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
-
-			if (menu) {
-				toolPage.setSideExpanded(!toolPage.getSideExpanded());
-			} else {
-				toolPage.setSideExpanded(false);
-			}
+			toolPage.setSideExpanded(!toolPage.getSideExpanded());
 		},
+
+		// _SideNavButtonPress: function (menu) {
+		// 	var viewId = this.getView().getId();
+		// 	var toolPage = sap.ui.getCore().byId(viewId + "--toolPage");
+
+		// 	if (menu) {
+		// 		toolPage.setSideExpanded(!toolPage.getSideExpanded());
+		// 	} else {
+		// 		toolPage.setSideExpanded(false);
+		// 	}
+		// },
 
 		handleUserNamePress: function (event) {
 			var popover = new Popover({

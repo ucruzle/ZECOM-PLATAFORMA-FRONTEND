@@ -180,10 +180,6 @@ sap.ui.define([
 						message: 'Consulta e cria, usuário, perfil, permissões e concessões de funcionalidades',
 						items: [
 							{
-								title: 'Recursos',
-								key: 'listarecursosporperfis',
-								message: 'Consulta e cria, recursos por perfil de acesso ao app',
-							}, {
 								title: 'Perfis',
 								key: 'listaperfisdeacesso',
 								message: 'Consulta e cria, perfins de acesso ao app',
